@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title >Image Editor   </title>
+</head>
+<body>
+    <form >
+        <input type="file" id="file" accept=".jpg,.png" value="Select a file to edit" onchange="display(event)"><br>
+        
+        <table>
+            <div id="imgContainer">
+            <th id="td1"><img src="" id="block"/></th>
+        </div>
+            <th id="features">
+                <h2>Filter</h2>
+                <input id="radio1" type="radio" name="radiobtn" onclick="gray()"> <label for="radio1">Gray</label><br>
+                <input id="radio2" type="radio" name="radiobtn" onclick="invert()"> <label for="radio2">Invert</label><br>
+                <input id="radio3" type="radio" name="radiobtn" onclick="saturate()"> <label for="radio3">Saturate</label><br>
+                <input id="radio4" type="radio" name="radiobtn" onclick="bright()"> <label for="radio4">Bright</label><br>
+                <input id="radio5" type="radio" name="radiobtn" onclick="contrast()"> <label for="radio5">Contrast</label><br>
+                <input id="radio6" type="radio" name="radiobtn" onclick="oblur()"> <label for="radio6">Blur</label><br>
+                <input id="radio7" type="radio" name="radiobtn" onclick="sepia()"> <label for="radio7">Sepia</label><br>
+                <input id="radio8" type="radio" name="radiobtn" onclick="huerotate()"> <label for="radio8">Hue-Rotate</label><br>
+                <input id="radio9" type="radio" name="radiobtn" onclick="opacity()"> <label for="radio9">Opacity</label><br>
+                <input id="radio10" type="radio" name="radiobtn" onclick="none()"> <label for="radio10">None</label><br>
+                <input id="download" type="button" onclick="printDiv()" value="Download"/>
+            </th>
+            <th id="features">
+                <h2>Rotate</h2>
+                <input id="radior1" type="radio" name="radiobtn" onclick="rotateright()"> <label for="radior1">Rotate Right</label><br>
+                <input id="radior2" type="radio" name="radiobtn" onclick="rotateleft()"> <label for="radior2">Rotate Left</label><br>
+                <input id="radior3" type="radio" name="radiobtn" onclick="rotatedown()"> <label for="radior3">Rotate Upside Down</label><br>
+                <input id="radior4" type="radio" name="radiobtn" onclick="rotateup()"> <label for="radior4">Rotate Up</label><br>
+                <br><br>
+                
+            </th>
+            
+        </table>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
